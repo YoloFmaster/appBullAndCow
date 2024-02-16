@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textId0" type="id">@id/txt0</item>
+    <item name="textId1" type="id">@id/txt1</item>
+    <item name="textId2" type="id">@id/txt2</item>
+    <item name="textId3" type="id">@id/txt3</item>
+</resources>

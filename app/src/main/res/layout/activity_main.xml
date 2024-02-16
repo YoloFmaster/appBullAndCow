@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:windowSoftInputMode="stateAlwaysVisible"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/howPlay"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:background="@color/black"
+        android:contentDescription="@string/number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <ImageView
+        android:id="@+id/cow0"
+        style="@style/img"
+        android:contentDescription="@string/inspectCow"
+        app:srcCompat="@drawable/cow"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cow1"
+        />
+
+    <ImageView
+        android:id="@+id/bull0"
+        style="@style/img"
+        android:contentDescription="@string/inspectBull"
+        app:srcCompat="@drawable/bull"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bull1"
+        />
+
+    <EditText
+        android:id="@+id/txt0"
+        style="@style/editTxt"
+        android:labelFor="@id/txt0"
+        android:autofillHints="@string/number"
+        app:layout_constraintEnd_toStartOf="@id/txt1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bull0" />
+
+    <ImageView
+        android:id="@+id/cow1"
+        style="@style/img"
+        android:contentDescription="@string/inspectCow"
+        app:srcCompat="@drawable/cow"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        app:layout_constraintStart_toEndOf="@id/cow0"
+        app:layout_constraintEnd_toStartOf="@id/cow2"
+        />
+
+    <ImageView
+        android:id="@+id/bull1"
+        style="@style/img"
+        android:contentDescription="@string/inspectBull"
+        app:srcCompat="@drawable/bull"
+        app:layout_constraintEnd_toStartOf="@id/bull2"
+        app:layout_constraintStart_toEndOf="@id/bull0"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+         />
+
+    <EditText
+        android:id="@+id/txt1"
+        style="@style/editTxt"
+        android:autofillHints="@string/number"
+        app:layout_constraintEnd_toStartOf="@id/txt2"
+        app:layout_constraintStart_toEndOf="@id/txt0"
+        app:layout_constraintTop_toBottomOf="@id/bull1"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:id="@+id/cow2"
+        style="@style/img"
+        android:contentDescription="@string/inspectCow"
+        app:srcCompat="@drawable/cow"
+        app:layout_constraintStart_toEndOf="@id/cow1"
+        app:layout_constraintEnd_toStartOf="@id/cow3"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        />
+
+
+    <ImageView
+        android:id="@+id/bull2"
+        style="@style/img"
+        android:contentDescription="@string/inspectBull"
+        app:srcCompat="@drawable/bull"
+        app:layout_constraintStart_toEndOf="@id/bull1"
+        app:layout_constraintEnd_toStartOf="@id/bull3"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        />
+
+    <EditText
+        android:id="@+id/txt2"
+        style="@style/editTxt"
+        android:autofillHints="@string/number"
+        app:layout_constraintEnd_toStartOf="@id/txt3"
+        app:layout_constraintStart_toEndOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/bull2"
+        android:focusableInTouchMode="false"
+        />
+
+    <ImageView
+        android:id="@+id/cow3"
+        style="@style/img"
+        android:contentDescription="@string/inspectCow"
+        app:srcCompat="@drawable/cow"
+        app:layout_constraintStart_toEndOf="@id/cow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        />
+
+
+    <ImageView
+        android:id="@+id/bull3"
+        style="@style/img"
+        android:contentDescription="@string/inspectBull"
+        app:srcCompat="@drawable/bull"
+        app:layout_constraintStart_toEndOf="@id/bull2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/howPlay"
+        />
+
+    <EditText
+        android:id="@+id/txt3"
+        style="@style/editTxt"
+        android:autofillHints="@string/number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt2"
+        app:layout_constraintTop_toBottomOf="@id/bull3"
+        android:focusableInTouchMode="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
